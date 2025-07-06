@@ -2,9 +2,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
     min-height: 100vh;
     display: flex;
+    flex: 1;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/rachel-walker-fdYWSfH8N6Y-unsplash.jpg);
+    background-image: url(images/rachel-walker-fdYWSfH8N6Y-unsplash.jpg); 
 }
 
 .main {
@@ -15,12 +17,32 @@ body {
     color: antiquewhite;
     background-color: rgb(114, 114, 114);
     border-radius: 5px;
-    max-width: 750px;  
+    max-width: 800px; 
+    min-width: 500px;
+    max-height: fit-content; 
     padding: 16px; 
+    flex: auto;
+    margin: 250px 200px 50px 200px;
 }
 
 
 #poem1 {
     font-size: 30px;
     
+}
+
+
+.footer {
+    background-color: rgb(114, 114, 114);
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 915px;
+    max-height: 80px;
+    margin-top: auto;
 }
